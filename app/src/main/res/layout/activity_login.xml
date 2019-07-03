@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#773918"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="413dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#4B2419"
+        android:fontFamily="@font/sail"
+        android:gravity="center_horizontal|center_vertical"
+        android:hapticFeedbackEnabled="true"
+        android:outlineAmbientShadowColor="#00F7731B"
+        android:shadowColor="#F56A1E"
+        android:text="Dadles Vosotros de Comer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FCFFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="398dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:accessibilityHeading="false"
+        android:ems="20"
+        android:inputType="textEmailAddress"
+        android:isScrollContainer="true"
+        android:selectAllOnFocus="false"
+        android:shadowColor="#00F5CAB4"
+        android:singleLine="true"
+        android:text="Email:"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="221dp"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="396dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Contraseña:"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Switch
+        android:id="@+id/switchRemember"
+        android:layout_width="153dp"
+        android:layout_height="43dp"
+        android:background="#A09183"
+        android:switchTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="Recordarme"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="456dp" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="123dp"
+        android:layout_height="51dp"
+        android:background="#F8DB8011"
+        android:forceDarkAllowed="true"
+        android:text="Entrar"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="534dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
